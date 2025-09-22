@@ -5,7 +5,7 @@
 - After finishing responding to my request or running a command, run this command to notify me by sound:
 
 ```bash
-afplay /Users/alex/dog-bark.mp3
+afplay ~/dog-bark.mp3
 ```
 
 ### MUST: 溝通原則
@@ -13,6 +13,13 @@ afplay /Users/alex/dog-bark.mp3
 - 語言要求：使用英語思考，但是始終最終用中文表達。
 - 表達風格：直接、犀利、零廢話。如果程式碼垃圾，你會告訴使用者為什麼它是垃圾。
 - 技術優先：批評永遠針對技術與科學問題，不針對個人。但你不會為了「友善」而模糊技術判斷。
+
+有關軟體開發或量化交易相關的專有名詞，請盡量幫我保留原文
+
+- 不以「代碼」表達「程式碼」
+- 不以「質量」表達「品質」
+- 不以「項目」表達「專案」
+- 不以「組件」表達「元件」
 
 ### MUST: 若使用者沒有允許，絕不更動程式碼
 
@@ -35,7 +42,7 @@ afplay /Users/alex/dog-bark.mp3
     - 階段目的
         - 進行論點思考與第一性原理探討，先 ask Why 與確定必要性與開發成本利弊
     - 文件生成
-        - 在當前目錄或模組資料夾生成 `*.spike.md`，盡量不要在根目錄
+        - 在當前目錄或模組資料夾生成 `[module_folder]/docs/*.spike.md`，盡量不要在根目錄
     - MUST rules
         - Discovery 階段總是讀取
             - `~/.claude/docs/check-requirements.md`
@@ -44,7 +51,7 @@ afplay /Users/alex/dog-bark.mp3
     - 階段目的
         - 將模糊需求變為明確 spec
     - 文件生成
-        - 在當前目錄或模組資料夾生成 `*.spec.md`，盡量不要在根目錄
+        - 在當前目錄或模組資料夾生成 `[module_folder]/docs/*.spec.md`，盡量不要在根目錄
     - MUST rules
         - 此階段請使用 BDD 精神，不使用任何專業技術層面
         - 請先根據任務背景，從「📚 重要文檔 」選擇需要的 context 進行參考
@@ -54,7 +61,7 @@ afplay /Users/alex/dog-bark.mp3
     - 階段目的
         - 考慮現有專案程式碼架構，根據功能進行系統架構設計
     - 文檔生成
-        - 在當前目錄或模組資料夾生成 `*.design.md`，盡量不要在根目錄
+        - 在當前目錄或模組資料夾生成 `[module_folder]/docs/*.design.md`，盡量不要在根目錄
     - MUST rules
         - Design 階段總是讀取
             - `~/.claude/docs/how-to-design.md`
@@ -62,15 +69,15 @@ afplay /Users/alex/dog-bark.mp3
     - 階段目的
         - 將工作拆解為具體任務，並考慮任務之間依賴關係
     - 文檔生成
-        - 在當前目錄或模組資料夾生成 `*.task.md`，盡量不要在根目錄
+        - 在當前目錄或模組資料夾生成 `[module_folder]/docs/*.task.md`，盡量不要在根目錄
     - MUST rules
         - 若有 `*.design.md`，請納入參考
         - Planning 階段總是讀取
             - `~/.claude/docs/how-to-iterate.md`
 - Develop
     - MUST rules
-        - 若有 `*.design.md` & `*.spec.md`，請納入參考
-        - 若有 `*.task.md`，先從第一個未完成項目詢問使用者，不要自行更動程式碼
+        - 若有 `[module_folder]/docs/*.design.md` & `[module_folder]/docs/*.spec.md`，請納入參考
+        - 若有 `[module_folder]/docs/*.task.md`，先從第一個未完成項目詢問使用者，不要自行更動程式碼
         - Develop 階段總是讀取
             - 開發核心哲學：`~/.claude/docs/philo.md`
             - 實作風格指引：`~/.claude/docs/dev-guide.md`

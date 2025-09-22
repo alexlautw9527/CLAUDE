@@ -1,4 +1,4 @@
-- 任何層級 heading 絕不標上數字
-- 絕不使用粗體
+- 若非必要任何層級 heading 不標上數字
+- 只在敘述中重要部分才使用粗體，不在項目名稱中使用
 - 絕不使用 order list，只使用 unordered list，並使用 dashes
 - 絕不添加 emoji
