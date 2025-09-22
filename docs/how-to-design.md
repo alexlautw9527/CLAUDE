@@ -2,14 +2,14 @@
 - `~/.claude/docs/philo.md` 作為設計哲學
 - 盡可能地找尋最相關的 `**.spec.md` 進行參考，並考量 AC
 
-template
+請完全遵循 template 架構
 
 ```
 ## 架構
 
-[可以使用 mermaid / UML]
+[描述架構，也可以使用 mermaid / UML]
 
-## [for every Feature]
+## [...for every Feature]
 
 ### Stories
 
@@ -21,7 +21,7 @@ template
 
 ### API (（option）)
 
-[有可能是 graphQL or RESTful，列出可能的 API]
+[有可能是 graphQL or RESTful，列出需要的 API]
 
 ### 元件結構 （option）
 
