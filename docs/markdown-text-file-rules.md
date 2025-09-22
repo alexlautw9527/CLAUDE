@@ -1,0 +1,4 @@
+- 任何層級 heading 絕不標上數字
+- 絕不使用粗體
+- 絕不使用 order list，只使用 unordered list，並使用 dashes
+- 絕不添加 emoji
