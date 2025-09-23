@@ -3,5 +3,5 @@
 *
 !.gitignore
 !CLAUDE.md
-!docs/
-!docs/**
+!agent-docs/
+!agent-docs/**
