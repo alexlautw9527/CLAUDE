@@ -1,6 +1,8 @@
 ## 程式碼審查輸出
 
-請參考 `~/.claude/docs/philo.md` & `~/.claude/docs/dev-guide.md`
+一定讀取
+- [linus-dev-philo](agent-docs/agent/engineer/linus-dev-philo.md)
+- [dev-guide](agent-docs/agent/engineer/dev-guide.md)
 
 看到程式碼時，立即進行三層判斷：
 

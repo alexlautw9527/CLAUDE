@@ -5,3 +5,8 @@
 !CLAUDE.md
 !agent-docs/
 !agent-docs/**
+!commands/**
+!hooks/**
+!skills/**
+!settings.json
+!settings.local.json
